@@ -1,0 +1,96 @@
+# Astronomy — Pictor Nebula
+# Competitor entity (Interfere version only): the Fornax Loop.
+# Q1: description (3 correct: gas cloud, distance, lit by young stars)
+# Q2: observation method (2 correct: optical telescope, red light)
+# Q3: research purpose (2 correct: gravity pulls gas together, gas ignites into new stars)
+# Q4: 2x2 combination of object type x research purpose (1 correct)
+# Q5: every option pairs a label with a wrong description or the reverse; None of the above is correct (answer=[5])
+# AT: instructed attention check (select None of the above)
+# answer: list of correct option numbers (1-indexed, matching Qualtrics choice order)
+
+title: Astronomy — Pictor Nebula
+answer_type: multi_select
+scoring: per_statement
+
+questions:
+  - q_id: QA01
+    question: "Which of the following correctly describe the Pictor Nebula? Select all that apply."
+    options:
+      1: "It is a cloud of gas"
+      2: "It is located about four thousand light-years from Earth"
+      3: "It is lit from within by young stars"
+      4: "It is a dense ball of old stars"
+      5: "None of the above"
+    answer: [1, 2, 3]
+    metadata:
+      type: content
+      feature: [object_type, location, mechanism]
+      concepts: [pictor_nebula]
+
+  - q_id: QA02
+    question: "How do scientists observe the Pictor Nebula? Select all that apply."
+    options:
+      1: "With an optical telescope"
+      2: "By picking up red light emitted by the nebula"
+      3: "Using radio equipment that picks up regular pulses"
+      4: "By measuring how its mass varies over time"
+      5: "None of the above"
+    answer: [1, 2]
+    metadata:
+      type: content
+      feature: observation_method
+      concepts: [pictor_nebula]
+
+  - q_id: QA03
+    question: "What do astronomers study the Pictor Nebula to learn? Select all that apply."
+    options:
+      1: "How gravity pulls pockets of gas together"
+      2: "How gas clouds ignite into new stars"
+      3: "How gravitational waves ripple through a region of space"
+      4: "How black hole emissions change"
+      5: "None of the above"
+    answer: [1, 2]
+    metadata:
+      type: content
+      feature: scientific_value
+      concepts: [pictor_nebula]
+
+  - q_id: QA04
+    question: "Which of the following correctly describes the Pictor Nebula? Select all that apply."
+    options:
+      1: "A gas cloud lit by embedded young stars that is studied to understand how new stars form"
+      2: "A gas cloud lit by embedded young stars that is studied to understand gravitational waves"
+      3: "The remains of a dying star that is studied to understand how new stars form"
+      4: "The remains of a dying star that is studied to understand gravitational waves"
+      5: "None of the above"
+    answer: [1]
+    metadata:
+      type: content
+      feature: [object_type, scientific_value]
+      concepts: [pictor_nebula]
+
+  - q_id: QA05
+    question: "Which of the following correctly identifies what the Pictor Nebula is? Select all that apply."
+    options:
+      1: "An emission nebula — a dense ball of old stars gravitationally bound together"
+      2: "A globular pulsar — a cloud of gas lit by its own embedded young stars"
+      3: "A globular pulsar — the collapsed core of an exploded massive star"
+      4: "An emission nebula — two stars in a close gravitational orbit"
+      5: "None of the above"
+    answer: [5]
+    metadata:
+      type: content
+      feature: object_type
+      concepts: [pictor_nebula]
+
+  - q_id: AT_astronomy
+    question: "This is an attention check. Please select 'None of the above' for this question, regardless of the other options."
+    options:
+      1: "A telescope tuned to a narrow band of light"
+      2: "A cluster of stars near the galactic edge"
+      3: "A faint object first catalogued in the 1800s"
+      4: "A nebula visible only through long exposure"
+      5: "None of the above"
+    answer: [5]
+    metadata:
+      type: attention_check

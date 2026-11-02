@@ -1,0 +1,76 @@
+{
+  "task": "sum_application_listening_qa",
+  "variant": "prop-batch",
+  "model": "Qwen/Qwen3-8B",
+  "backend": "openai",
+  "profile": {
+    "name": "qwen3-think",
+    "model": "Qwen/Qwen3-8B",
+    "backend": "openai",
+    "base_url": "http://127.0.0.1:47625/v1",
+    "sampling": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0.0,
+      "presence_penalty": null,
+      "repetition_penalty": null,
+      "omit_sampling": false,
+      "reasoning_effort": null,
+      "thinking": null,
+      "send_parallel_tool_calls": true,
+      "prompt_cache": false,
+      "extra_body": {
+        "chat_template_kwargs": {
+          "enable_thinking": true
+        }
+      }
+    },
+    "max_tokens": {
+      "prompted": 16384,
+      "encode": 8192,
+      "recall": 16384,
+      "step": 8192
+    },
+    "price_per_mtok": null,
+    "notes": ""
+  },
+  "condition_id": "C2",
+  "budget": 4,
+  "calibration_grid": null,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "n_repeats_per_cell": 50,
+  "recall_max_tokens": 16384,
+  "step_max_tokens": 8192,
+  "base_url": "http://127.0.0.1:47625/v1",
+  "extra_body": null,
+  "prompts": {
+    "system_prompt": "You are simulating a human participant in a psychology experiment.\n\nOriginal task instructions:\nListen to an audio passage, answer all multiple-select questions, then rate passage and question difficulty.\n\nThe human will listen to an audio recording once, after which the audio cannot be replayed. The human will then be asked to answer questions about the recording based on their memory, selecting all options that apply for each question, and rate passage and question difficulty out of 10.\n\nYour memory holds at most 4 short propositions from the recording. You will later answer the questions using ONLY those propositions.",
+    "extract_user": "You are about to hear a passage, and you'll be asked questions about it afterwards. As a listener, you cannot remember everything from the passage — only a few key facts.\n\nListen to the passage and identify at most {capacity} distinct propositions (paraphrased atomic facts from the passage) that you think are most relevant to the questions you'll be asked. Do not answer any questions yet.\n\n<TEXT>\n{text_content}\n</TEXT>\n\nRespond with ONLY a JSON object in the following format, with no other text:\n{{\"propositions\": [\"proposition 1\", \"proposition 2\", ...]}}\n",
+    "reask_json_user": "{extract_prompt}\n\nYour previous reply could not be parsed. Reply with ONLY the JSON object.",
+    "recall_template": "The study phase is now over.\n{memory_header}\n{memory_text}\n\nOriginal task instructions:\n{task_desc}\n\nBased ONLY on the above {memory_noun}, answer the following questions {answer_focus}.\n\n{questions_text}\n\n{format_rules}",
+    "format_rules": "Output ONLY lines in this exact format:\nQuestion 1: 1,3\nQuestion 2: 2\n...\nPassage Difficulty: 7\nQuestion Difficulty: 7\n(List every correct option number for a question, separated by commas. If none apply, use the \"None of the above\" option number.)\n"
+  },
+  "git_provenance": {
+    "commit": null,
+    "branch": null,
+    "tags": [],
+    "dirty": false,
+    "prompt_diffs": {
+      "bench/tasks/wm_prompt_parts.py": null,
+      "bench/tasks/wm_mcq_common.py": null,
+      "bench/core/wm_agent.py": null,
+      "bench/tasks/human_simulation_prefixes.py": null,
+      "bench/tasks/digit_span_forward.py": null,
+      "bench/tasks/digit_span_reverse.py": null,
+      "application/listening_qa/prompting.py": null,
+      "application/reading_qa/prompting.py": null,
+      "rationales/prompting.py": null,
+      "rationales/prompts/fewshot_forward.txt": null,
+      "rationales/prompts/fewshot_reverse.txt": null,
+      "rationales/listening/prompting.py": null,
+      "rationales/prompts/fewshot_listening.txt": null
+    }
+  }
+}

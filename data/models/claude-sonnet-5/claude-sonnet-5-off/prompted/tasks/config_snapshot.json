@@ -1,0 +1,71 @@
+{
+  "task": "application_listening_qa",
+  "model": "claude-sonnet-5",
+  "backend": "anthropic",
+  "conditions": [
+    "V1",
+    "C1",
+    "C2",
+    "C3"
+  ],
+  "temperature": 0.0,
+  "max_tokens": 2048,
+  "profile": {
+    "name": "claude-sonnet-5-off",
+    "model": "claude-sonnet-5",
+    "backend": "anthropic",
+    "base_url": null,
+    "sampling": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "min_p": null,
+      "presence_penalty": null,
+      "repetition_penalty": null,
+      "omit_sampling": true,
+      "reasoning_effort": null,
+      "thinking": "disabled",
+      "send_parallel_tool_calls": true,
+      "prompt_cache": true,
+      "extra_body": {}
+    },
+    "max_tokens": {
+      "prompted": 2048,
+      "encode": 1024,
+      "recall": 2048,
+      "step": 1024
+    },
+    "price_per_mtok": [
+      2.0,
+      10.0
+    ],
+    "notes": ""
+  },
+  "top_p": 1.0,
+  "n_repeats_per_cell": 50,
+  "documents_dir": "application/listening_qa/data",
+  "base_url": null,
+  "extra_body": null,
+  "dry_run": false,
+  "git_provenance": {
+    "commit": "21ffbc94286d524add10c9df734af9fca54bac57",
+    "branch": "exp/listening-qa-model-expansion",
+    "tags": [],
+    "dirty": false,
+    "prompt_diffs": {
+      "bench/tasks/wm_prompt_parts.py": null,
+      "bench/tasks/wm_mcq_common.py": null,
+      "bench/core/wm_agent.py": null,
+      "bench/tasks/human_simulation_prefixes.py": null,
+      "bench/tasks/digit_span_forward.py": null,
+      "bench/tasks/digit_span_reverse.py": null,
+      "application/listening_qa/prompting.py": null,
+      "application/reading_qa/prompting.py": null,
+      "rationales/prompting.py": null,
+      "rationales/prompts/fewshot_forward.txt": null,
+      "rationales/prompts/fewshot_reverse.txt": null,
+      "rationales/listening/prompting.py": null,
+      "rationales/prompts/fewshot_listening.txt": null
+    }
+  }
+}

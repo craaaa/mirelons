@@ -1,0 +1,99 @@
+# Fruits — Mirelon
+# See features.md for every mention of each fact and the competitor (Quessaro) paragraph.
+# Mentions of each tested fact: SayOnce 1, SayTwice 2, SayThrice 3, Distract 1.
+# Q1: exterior (2 correct: skin colour + bloom)
+# Q2: flesh + pigment (2 correct: flesh colour + nivellin)
+# Q3: botanical name (1 correct: exact binomial)
+# Q4: 2x2 combination of ripening type x growing altitude (1 correct)
+# Q5: every option pairs the Mirelon with a wrong feature; None of the above is correct (answer=[5])
+# AT: attention check answerable from option wording alone
+# answer: list of correct option numbers (1-indexed, matching Qualtrics choice order)
+
+title: Fruits — Mirelon
+answer_type: multi_select
+scoring: per_statement
+
+questions:
+  - q_id: QF_V2_01
+    question: "Which of the following correctly describe the outer appearance of the Mirelon? Select all that apply."
+    options:
+      1: "The skin is a dark, nearly black shade of blue"
+      2: "The skin is dusted with a pale white powdery coating"
+      3: "The skin is a warm yellow color"
+      4: "The surface is smooth and glossy"
+      5: "None of the above"
+    answer: [1, 2]
+    metadata:
+      type: content
+      feature: exterior_appearance
+      concepts: [mirelon]
+
+  - q_id: QF_V2_02
+    question: "Which of the following are true of the Mirelon's flesh? Select all that apply."
+    options:
+      1: "The interior is a warm, deep golden-yellow"
+      2: "The color of the flesh comes from a pigment called nivellin"
+      3: "The interior is a soft pale violet"
+      4: "The color of the flesh comes from a pigment called thornellin"
+      5: "None of the above"
+    answer: [1, 2]
+    metadata:
+      type: content
+      feature: interior_flesh+pigment
+      concepts: [mirelon]
+
+  - q_id: QF_V2_03
+    question: "What is the botanical name of the Mirelon? Select all that apply."
+    options:
+      1: "Thyrsocarpus niveus"
+      2: "Thyrsocarpus pallens"
+      3: "Spinofex arbens"
+      4: "Thyrsocarpus mirabilis"
+      5: "None of the above"
+    answer: [1]
+    metadata:
+      type: content
+      feature: latin_name
+      concepts: [mirelon]
+
+  - q_id: QF_V2_04
+    question: "Which combination correctly describes the Mirelon?"
+    options:
+      1: "Does not continue ripening once harvested; grows above 900 feet"
+      2: "Does not continue ripening once harvested; grows below 500 feet"
+      3: "Continues ripening after harvest; grows above 900 feet"
+      4: "Continues ripening after harvest; grows below 500 feet"
+      5: "None of the above"
+    answer: [1]
+    metadata:
+      type: content
+      feature: ripening_type+growing_conditions
+      concepts: [mirelon]
+
+  - q_id: QF_V2_05
+    question: "Which of the following correctly describes a mirelon's feature? Select all that apply."
+    options:
+      1: "Its outer skin is pale yellow with fine raised bristles"
+      2: "Its flesh is colored by a compound called shortellin"
+      3: "It is a climacteric fruit that continues ripening after harvest"
+      4: "Its botanical name Thyrsocarpus rufa"
+      5: "None of the above"
+    answer: [5]
+    metadata:
+      type: content
+      feature: trick_none
+      concepts: [mirelon]
+
+  - q_id: AT_fruits_v2
+    question: "Which of the following options mentions a color? This is an attention check — select only that option."
+    options:
+      1: "Harvested in the early weeks of autumn"
+      2: "A deep purple skin over pale flesh"
+      3: "Stored in cool, dry conditions"
+      4: "Sold mainly at regional markets"
+      5: "None of the above"
+    answer: [2]
+    metadata:
+      type: attention_check
+      feature: N/A
+      concepts: []

@@ -1,0 +1,142 @@
+{
+  "task": "wm_application_listening_qa",
+  "model": "gemini-3.6-flash",
+  "condition_id": "C2-stream",
+  "segment_unit": "sentence",
+  "n_repeats_per_cell": 50,
+  "n_cells": 16,
+  "n_total_trials": 800,
+  "llm_usage": {
+    "request_count": 21211,
+    "prompt_tokens": 25717826,
+    "completion_tokens": 671020,
+    "total_tokens": 26388846,
+    "hidden_reasoning_tokens": 0,
+    "billable_completion_tokens": 671020,
+    "actual_cost_usd": null,
+    "cached_prompt_tokens": 0,
+    "reasoning_tokens": 0,
+    "truncated_responses": 0,
+    "estimated_cost_usd": 43.60938899999999,
+    "cost_source": "estimated (list price x tokens)"
+  },
+  "git_provenance": {
+    "commit": "21ffbc94286d524add10c9df734af9fca54bac57",
+    "branch": "exp/listening-qa-model-expansion",
+    "tags": [],
+    "dirty": false,
+    "prompt_diffs": {
+      "bench/tasks/wm_prompt_parts.py": null,
+      "bench/tasks/wm_mcq_common.py": null,
+      "bench/core/wm_agent.py": null,
+      "bench/tasks/human_simulation_prefixes.py": null,
+      "bench/tasks/digit_span_forward.py": null,
+      "bench/tasks/digit_span_reverse.py": null,
+      "application/listening_qa/prompting.py": null,
+      "application/reading_qa/prompting.py": null,
+      "rationales/prompting.py": null,
+      "rationales/prompts/fewshot_forward.txt": null,
+      "rationales/prompts/fewshot_reverse.txt": null,
+      "rationales/listening/prompting.py": null,
+      "rationales/prompts/fewshot_listening.txt": null
+    }
+  },
+  "cells": {
+    "astronomy:control:C2-stream": {
+      "n": 50,
+      "exact_match_mean": 0.7120000000000001,
+      "per_statement_mean": 0.8872,
+      "parse_error_count": 0
+    },
+    "astronomy:repeat_short:C2-stream": {
+      "n": 50,
+      "exact_match_mean": 0.884,
+      "per_statement_mean": 0.9736,
+      "parse_error_count": 0
+    },
+    "astronomy:repeat_long:C2-stream": {
+      "n": 50,
+      "exact_match_mean": 0.804,
+      "per_statement_mean": 0.9384,
+      "parse_error_count": 0
+    },
+    "astronomy:distractor:C2-stream": {
+      "n": 50,
+      "exact_match_mean": 0.256,
+      "per_statement_mean": 0.5680000000000001,
+      "parse_error_count": 0
+    },
+    "fabrics:control:C2-stream": {
+      "n": 50,
+      "exact_match_mean": 0.748,
+      "per_statement_mean": 0.9495999999999999,
+      "parse_error_count": 0
+    },
+    "fabrics:repeat_short:C2-stream": {
+      "n": 50,
+      "exact_match_mean": 0.8079999999999999,
+      "per_statement_mean": 0.9423999999999999,
+      "parse_error_count": 0
+    },
+    "fabrics:repeat_long:C2-stream": {
+      "n": 50,
+      "exact_match_mean": 0.62,
+      "per_statement_mean": 0.8936,
+      "parse_error_count": 0
+    },
+    "fabrics:distractor:C2-stream": {
+      "n": 50,
+      "exact_match_mean": 0.552,
+      "per_statement_mean": 0.7944,
+      "parse_error_count": 0
+    },
+    "fruits:control:C2-stream": {
+      "n": 50,
+      "exact_match_mean": 0.728,
+      "per_statement_mean": 0.8904000000000001,
+      "parse_error_count": 0
+    },
+    "fruits:repeat_short:C2-stream": {
+      "n": 50,
+      "exact_match_mean": 0.708,
+      "per_statement_mean": 0.8815999999999999,
+      "parse_error_count": 0
+    },
+    "fruits:repeat_long:C2-stream": {
+      "n": 50,
+      "exact_match_mean": 0.664,
+      "per_statement_mean": 0.8543999999999999,
+      "parse_error_count": 0
+    },
+    "fruits:distractor:C2-stream": {
+      "n": 50,
+      "exact_match_mean": 0.444,
+      "per_statement_mean": 0.7559999999999999,
+      "parse_error_count": 0
+    },
+    "martial_arts:control:C2-stream": {
+      "n": 50,
+      "exact_match_mean": 0.408,
+      "per_statement_mean": 0.7696,
+      "parse_error_count": 0
+    },
+    "martial_arts:repeat_short:C2-stream": {
+      "n": 50,
+      "exact_match_mean": 0.484,
+      "per_statement_mean": 0.8192,
+      "parse_error_count": 0
+    },
+    "martial_arts:repeat_long:C2-stream": {
+      "n": 50,
+      "exact_match_mean": 0.48800000000000004,
+      "per_statement_mean": 0.8248000000000001,
+      "parse_error_count": 0
+    },
+    "martial_arts:distractor:C2-stream": {
+      "n": 50,
+      "exact_match_mean": 0.248,
+      "per_statement_mean": 0.6728000000000001,
+      "parse_error_count": 0
+    }
+  }
+}

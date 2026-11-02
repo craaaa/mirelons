@@ -1,0 +1,202 @@
+{
+  "task": "sum_application_listening_qa",
+  "variant": "sum-stream",
+  "model": "claude-haiku-5-5",
+  "condition_id": "C2-stream",
+  "budget": 60,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "n_repeats_per_cell": 50,
+  "n_total_trials": 800,
+  "llm_usage": {
+    "request_count": 11977,
+    "prompt_tokens": 5379862,
+    "completion_tokens": 1337169,
+    "total_tokens": 6717031,
+    "actual_cost_usd": null,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "reasoning_tokens": 0,
+    "truncated_responses": 0,
+    "estimated_cost_usd": null,
+    "cost_source": "estimated (list price x tokens)"
+  },
+  "git_provenance": {
+    "commit": "1b076b15d1ef1fa2df92b1963ba7a9ef3ba61c2b",
+    "branch": "exp/listening-qa-model-expansion",
+    "tags": [],
+    "dirty": false,
+    "prompt_diffs": {
+      "bench/tasks/wm_prompt_parts.py": null,
+      "bench/tasks/wm_mcq_common.py": null,
+      "bench/core/wm_agent.py": null,
+      "bench/tasks/human_simulation_prefixes.py": null,
+      "bench/tasks/digit_span_forward.py": null,
+      "bench/tasks/digit_span_reverse.py": null,
+      "application/listening_qa/prompting.py": null,
+      "application/reading_qa/prompting.py": null,
+      "rationales/prompting.py": null,
+      "rationales/prompts/fewshot_forward.txt": null,
+      "rationales/prompts/fewshot_reverse.txt": null,
+      "rationales/listening/prompting.py": null,
+      "rationales/prompts/fewshot_listening.txt": null
+    }
+  },
+  "cells": {
+    "astronomy:control:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.7160000000000001,
+      "per_statement_mean": 0.904,
+      "parse_error_count": 0,
+      "memory_words_mean": 55.92
+    },
+    "astronomy:distractor:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.47600000000000003,
+      "per_statement_mean": 0.8512000000000001,
+      "parse_error_count": 0,
+      "memory_words_mean": 59.38
+    },
+    "astronomy:repeat_long:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.784,
+      "per_statement_mean": 0.9168000000000001,
+      "parse_error_count": 0,
+      "memory_words_mean": 54.48
+    },
+    "astronomy:repeat_short:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.78,
+      "per_statement_mean": 0.916,
+      "parse_error_count": 0,
+      "memory_words_mean": 56.4
+    },
+    "fabrics:control:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.652,
+      "per_statement_mean": 0.8896000000000001,
+      "parse_error_count": 0,
+      "memory_words_mean": 54.54
+    },
+    "fabrics:distractor:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.584,
+      "per_statement_mean": 0.8728,
+      "parse_error_count": 0,
+      "memory_words_mean": 58.9
+    },
+    "fabrics:repeat_long:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.66,
+      "per_statement_mean": 0.8944,
+      "parse_error_count": 0,
+      "memory_words_mean": 56.34
+    },
+    "fabrics:repeat_short:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.68,
+      "per_statement_mean": 0.9007999999999999,
+      "parse_error_count": 0,
+      "memory_words_mean": 55.62
+    },
+    "fruits:control:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.9440000000000001,
+      "per_statement_mean": 0.9832,
+      "parse_error_count": 0,
+      "memory_words_mean": 53.58
+    },
+    "fruits:distractor:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.752,
+      "per_statement_mean": 0.912,
+      "parse_error_count": 0,
+      "memory_words_mean": 56.18
+    },
+    "fruits:repeat_long:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.904,
+      "per_statement_mean": 0.9704,
+      "parse_error_count": 0,
+      "memory_words_mean": 57.18
+    },
+    "fruits:repeat_short:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.932,
+      "per_statement_mean": 0.9840000000000001,
+      "parse_error_count": 0,
+      "memory_words_mean": 54.56
+    },
+    "martial_arts:control:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.98,
+      "per_statement_mean": 0.9928,
+      "parse_error_count": 0,
+      "memory_words_mean": 58.86
+    },
+    "martial_arts:distractor:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.9640000000000001,
+      "per_statement_mean": 0.9904000000000001,
+      "parse_error_count": 0,
+      "memory_words_mean": 58.92
+    },
+    "martial_arts:repeat_long:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.8079999999999999,
+      "per_statement_mean": 0.9448000000000001,
+      "parse_error_count": 0,
+      "memory_words_mean": 58.28
+    },
+    "martial_arts:repeat_short:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.9,
+      "per_statement_mean": 0.9688,
+      "parse_error_count": 0,
+      "memory_words_mean": 59.2
+    }
+  },
+  "empty_response_count": 0,
+  "unparsed_answer_rate": 0.0,
+  "budget_fallback_rate": 0.3072514619883041,
+  "budget_truncation_rate": 0.09777777777777778,
+  "budget_fallback_flag": true,
+  "memory_words_mean_by_level": {
+    "control": 55.725,
+    "repeat_short": 56.445,
+    "repeat_long": 56.57,
+    "distractor": 58.345
+  }
+}

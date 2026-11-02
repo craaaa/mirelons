@@ -1,0 +1,12 @@
+model=Qwen/Qwen2.5-32B-Instruct
+profile=qwen2.5-32b
+task=sum:sum-batch:60
+n_repeats_per_cell=50
+hf_snapshot_sha=5ede1c97bbab6ce5cda5812749b4c0bdf79b18dd
+vllm=0.31.0
+torch=2.13.0+cu130
+tensor_parallel_size=1
+gpu=      1 NVIDIA H200;
+vllm_serve_flags=--port 37311 --host 127.0.0.1 --tensor-parallel-size 1 --dtype bfloat16 --max-model-len 32768 --gpu-memory-utilization 0.90 --generation-config vllm --enable-auto-tool-choice --tool-call-parser hermes
+repo_git_sha=21ffbc9
+date=2026-10-10T19:21:35-04:00

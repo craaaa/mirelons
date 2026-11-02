@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+# intermediate scoring outputs (python -m analysis.levels_analysis plan / run)
+results/levels/parts/
+results/levels/todo.json

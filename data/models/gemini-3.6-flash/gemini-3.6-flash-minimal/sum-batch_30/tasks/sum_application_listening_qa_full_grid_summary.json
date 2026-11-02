@@ -1,0 +1,203 @@
+{
+  "task": "sum_application_listening_qa",
+  "variant": "sum-batch",
+  "model": "gemini-3.6-flash",
+  "condition_id": "C2",
+  "budget": 30,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "n_repeats_per_cell": 50,
+  "n_total_trials": 800,
+  "llm_usage": {
+    "request_count": 1604,
+    "prompt_tokens": 893681,
+    "completion_tokens": 81193,
+    "total_tokens": 974874,
+    "hidden_reasoning_tokens": 0,
+    "billable_completion_tokens": 81193,
+    "actual_cost_usd": null,
+    "cached_prompt_tokens": 0,
+    "reasoning_tokens": 0,
+    "truncated_responses": 0,
+    "estimated_cost_usd": 1.949469,
+    "cost_source": "estimated (list price x tokens)"
+  },
+  "git_provenance": {
+    "commit": "5d28bb5368a6a9ece0bc9c69ba565900a21e609a",
+    "branch": "exp/listening-qa-model-expansion",
+    "tags": [],
+    "dirty": false,
+    "prompt_diffs": {
+      "bench/tasks/wm_prompt_parts.py": null,
+      "bench/tasks/wm_mcq_common.py": null,
+      "bench/core/wm_agent.py": null,
+      "bench/tasks/human_simulation_prefixes.py": null,
+      "bench/tasks/digit_span_forward.py": null,
+      "bench/tasks/digit_span_reverse.py": null,
+      "application/listening_qa/prompting.py": null,
+      "application/reading_qa/prompting.py": null,
+      "rationales/prompting.py": null,
+      "rationales/prompts/fewshot_forward.txt": null,
+      "rationales/prompts/fewshot_reverse.txt": null,
+      "rationales/listening/prompting.py": null,
+      "rationales/prompts/fewshot_listening.txt": null
+    }
+  },
+  "cells": {
+    "astronomy:control:C2:30": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.8,
+      "per_statement_mean": 0.9423999999999999,
+      "parse_error_count": 0,
+      "memory_words_mean": 26.62
+    },
+    "astronomy:distractor:C2:30": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.532,
+      "per_statement_mean": 0.8248000000000001,
+      "parse_error_count": 0,
+      "memory_words_mean": 27.62
+    },
+    "astronomy:repeat_long:C2:30": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.9359999999999999,
+      "per_statement_mean": 0.9848,
+      "parse_error_count": 0,
+      "memory_words_mean": 27.08
+    },
+    "astronomy:repeat_short:C2:30": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.948,
+      "per_statement_mean": 0.9895999999999999,
+      "parse_error_count": 0,
+      "memory_words_mean": 26.9
+    },
+    "fabrics:control:C2:30": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.76,
+      "per_statement_mean": 0.9231999999999999,
+      "parse_error_count": 0,
+      "memory_words_mean": 27.84
+    },
+    "fabrics:distractor:C2:30": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.556,
+      "per_statement_mean": 0.7784,
+      "parse_error_count": 0,
+      "memory_words_mean": 25.78
+    },
+    "fabrics:repeat_long:C2:30": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.728,
+      "per_statement_mean": 0.8767999999999999,
+      "parse_error_count": 0,
+      "memory_words_mean": 29.16
+    },
+    "fabrics:repeat_short:C2:30": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.8080000000000002,
+      "per_statement_mean": 0.9184,
+      "parse_error_count": 0,
+      "memory_words_mean": 28.02
+    },
+    "fruits:control:C2:30": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.968,
+      "per_statement_mean": 0.9936,
+      "parse_error_count": 0,
+      "memory_words_mean": 25.48
+    },
+    "fruits:distractor:C2:30": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.7560000000000001,
+      "per_statement_mean": 0.9431999999999999,
+      "parse_error_count": 0,
+      "memory_words_mean": 26.88
+    },
+    "fruits:repeat_long:C2:30": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 1.0,
+      "per_statement_mean": 1.0,
+      "parse_error_count": 0,
+      "memory_words_mean": 24.48
+    },
+    "fruits:repeat_short:C2:30": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 1.0,
+      "per_statement_mean": 1.0,
+      "parse_error_count": 0,
+      "memory_words_mean": 25.64
+    },
+    "martial_arts:control:C2:30": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.7,
+      "per_statement_mean": 0.8872,
+      "parse_error_count": 0,
+      "memory_words_mean": 28.26
+    },
+    "martial_arts:distractor:C2:30": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.3,
+      "per_statement_mean": 0.7176,
+      "parse_error_count": 0,
+      "memory_words_mean": 27.5
+    },
+    "martial_arts:repeat_long:C2:30": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.956,
+      "per_statement_mean": 0.9895999999999999,
+      "parse_error_count": 0,
+      "memory_words_mean": 27.5
+    },
+    "martial_arts:repeat_short:C2:30": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.956,
+      "per_statement_mean": 0.98,
+      "parse_error_count": 0,
+      "memory_words_mean": 27.9
+    }
+  },
+  "empty_response_count": 0,
+  "unparsed_answer_rate": 0.0,
+  "budget_fallback_rate": 0.005,
+  "budget_truncation_rate": 0.0,
+  "budget_fallback_flag": false,
+  "memory_words_mean_by_level": {
+    "control": 27.05,
+    "repeat_short": 27.115,
+    "repeat_long": 27.055,
+    "distractor": 26.945
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "task": "wm_application_listening_qa",
+  "model": "z-ai/glm-5.3-flash",
+  "condition_id": "C2",
+  "segment_unit": null,
+  "n_repeats_per_cell": 50,
+  "n_cells": 16,
+  "n_total_trials": 800,
+  "llm_usage": {
+    "request_count": 2437,
+    "prompt_tokens": 5268449,
+    "completion_tokens": 2622694,
+    "total_tokens": 7891143,
+    "hidden_reasoning_tokens": 0,
+    "billable_completion_tokens": 2622694,
+    "actual_cost_usd": 1.752673550000001,
+    "cached_prompt_tokens": 2907840,
+    "reasoning_tokens": 2303538,
+    "truncated_responses": 15,
+    "cost_source": "actual (openrouter billed)"
+  },
+  "git_provenance": {
+    "commit": "ef6304d0def79d093ff76c8eca73112cfb33b38a",
+    "branch": "exp/listening-qa-model-expansion",
+    "tags": [],
+    "dirty": false,
+    "prompt_diffs": {
+      "bench/tasks/wm_prompt_parts.py": null,
+      "bench/tasks/wm_mcq_common.py": null,
+      "bench/core/wm_agent.py": null,
+      "bench/tasks/human_simulation_prefixes.py": null,
+      "bench/tasks/digit_span_forward.py": null,
+      "bench/tasks/digit_span_reverse.py": null,
+      "application/listening_qa/prompting.py": null,
+      "application/reading_qa/prompting.py": null,
+      "rationales/prompting.py": null,
+      "rationales/prompts/fewshot_forward.txt": null,
+      "rationales/prompts/fewshot_reverse.txt": null,
+      "rationales/listening/prompting.py": null,
+      "rationales/prompts/fewshot_listening.txt": null
+    }
+  },
+  "cells": {
+    "astronomy:control:C2": {
+      "n": 50,
+      "exact_match_mean": 0.996,
+      "per_statement_mean": 0.9992,
+      "parse_error_count": 0
+    },
+    "astronomy:repeat_short:C2": {
+      "n": 50,
+      "exact_match_mean": 1.0,
+      "per_statement_mean": 1.0,
+      "parse_error_count": 0
+    },
+    "astronomy:repeat_long:C2": {
+      "n": 50,
+      "exact_match_mean": 1.0,
+      "per_statement_mean": 1.0,
+      "parse_error_count": 0
+    },
+    "astronomy:distractor:C2": {
+      "n": 50,
+      "exact_match_mean": 0.892,
+      "per_statement_mean": 0.9784,
+      "parse_error_count": 0
+    },
+    "fabrics:control:C2": {
+      "n": 50,
+      "exact_match_mean": 1.0,
+      "per_statement_mean": 1.0,
+      "parse_error_count": 0
+    },
+    "fabrics:repeat_short:C2": {
+      "n": 50,
+      "exact_match_mean": 1.0,
+      "per_statement_mean": 1.0,
+      "parse_error_count": 0
+    },
+    "fabrics:repeat_long:C2": {
+      "n": 50,
+      "exact_match_mean": 1.0,
+      "per_statement_mean": 1.0,
+      "parse_error_count": 0
+    },
+    "fabrics:distractor:C2": {
+      "n": 50,
+      "exact_match_mean": 0.9279999999999999,
+      "per_statement_mean": 0.9695999999999999,
+      "parse_error_count": 0
+    },
+    "fruits:control:C2": {
+      "n": 50,
+      "exact_match_mean": 0.9840000000000001,
+      "per_statement_mean": 0.9944,
+      "parse_error_count": 0
+    },
+    "fruits:repeat_short:C2": {
+      "n": 50,
+      "exact_match_mean": 0.9,
+      "per_statement_mean": 0.96,
+      "parse_error_count": 0
+    },
+    "fruits:repeat_long:C2": {
+      "n": 50,
+      "exact_match_mean": 0.9440000000000001,
+      "per_statement_mean": 0.9712000000000001,
+      "parse_error_count": 0
+    },
+    "fruits:distractor:C2": {
+      "n": 50,
+      "exact_match_mean": 1.0,
+      "per_statement_mean": 1.0,
+      "parse_error_count": 0
+    },
+    "martial_arts:control:C2": {
+      "n": 50,
+      "exact_match_mean": 0.932,
+      "per_statement_mean": 0.9640000000000001,
+      "parse_error_count": 0
+    },
+    "martial_arts:repeat_short:C2": {
+      "n": 50,
+      "exact_match_mean": 1.0,
+      "per_statement_mean": 1.0,
+      "parse_error_count": 0
+    },
+    "martial_arts:repeat_long:C2": {
+      "n": 50,
+      "exact_match_mean": 1.0,
+      "per_statement_mean": 1.0,
+      "parse_error_count": 0
+    },
+    "martial_arts:distractor:C2": {
+      "n": 50,
+      "exact_match_mean": 0.9520000000000001,
+      "per_statement_mean": 0.9840000000000001,
+      "parse_error_count": 0
+    }
+  }
+}

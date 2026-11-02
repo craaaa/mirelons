@@ -1,0 +1,5 @@
+n_true,questions,accuracy_pct,selected,omission_pct,commission_pct
+0,3,35.7,1.08,,64.3
+1,5,66.9,1.07,,33.1
+2,11,42.4,1.55,39.3,18.4
+3,1,26.4,2.04,62.2,11.4

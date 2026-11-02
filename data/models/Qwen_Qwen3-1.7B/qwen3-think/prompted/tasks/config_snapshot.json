@@ -1,0 +1,72 @@
+{
+  "task": "application_listening_qa",
+  "model": "Qwen/Qwen3-1.7B",
+  "backend": "openai",
+  "conditions": [
+    "V1",
+    "C1",
+    "C2",
+    "C3"
+  ],
+  "temperature": 0.0,
+  "max_tokens": 16384,
+  "profile": {
+    "name": "qwen3-think",
+    "model": "Qwen/Qwen3-1.7B",
+    "backend": "openai",
+    "base_url": "http://127.0.0.1:37879/v1",
+    "sampling": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0.0,
+      "presence_penalty": null,
+      "repetition_penalty": null,
+      "omit_sampling": false,
+      "reasoning_effort": null,
+      "thinking": null,
+      "send_parallel_tool_calls": true,
+      "prompt_cache": false,
+      "extra_body": {
+        "chat_template_kwargs": {
+          "enable_thinking": true
+        }
+      }
+    },
+    "max_tokens": {
+      "prompted": 16384,
+      "encode": 8192,
+      "recall": 16384,
+      "step": 8192
+    },
+    "price_per_mtok": null,
+    "notes": ""
+  },
+  "top_p": 1.0,
+  "n_repeats_per_cell": 50,
+  "documents_dir": "application/listening_qa/data",
+  "base_url": "http://127.0.0.1:37879/v1",
+  "extra_body": null,
+  "dry_run": false,
+  "git_provenance": {
+    "commit": null,
+    "branch": null,
+    "tags": [],
+    "dirty": false,
+    "prompt_diffs": {
+      "bench/tasks/wm_prompt_parts.py": null,
+      "bench/tasks/wm_mcq_common.py": null,
+      "bench/core/wm_agent.py": null,
+      "bench/tasks/human_simulation_prefixes.py": null,
+      "bench/tasks/digit_span_forward.py": null,
+      "bench/tasks/digit_span_reverse.py": null,
+      "application/listening_qa/prompting.py": null,
+      "application/reading_qa/prompting.py": null,
+      "rationales/prompting.py": null,
+      "rationales/prompts/fewshot_forward.txt": null,
+      "rationales/prompts/fewshot_reverse.txt": null,
+      "rationales/listening/prompting.py": null,
+      "rationales/prompts/fewshot_listening.txt": null
+    }
+  }
+}

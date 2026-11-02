@@ -1,0 +1,5 @@
+version,words_mean,words_min,words_max,audio_s_mean,audio_s_min,audio_s_max
+SayOnce,128,114,156,49,44,56
+SayTwice,134,126,152,54,51,57
+SayThrice,194,167,219,78,66,87
+Interfere,198,176,227,78,69,90

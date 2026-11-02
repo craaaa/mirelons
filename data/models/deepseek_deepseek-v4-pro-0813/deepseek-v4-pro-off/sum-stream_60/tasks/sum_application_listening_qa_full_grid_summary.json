@@ -1,0 +1,202 @@
+{
+  "task": "sum_application_listening_qa",
+  "variant": "sum-stream",
+  "model": "deepseek/deepseek-v4-pro-0813",
+  "condition_id": "C2-stream",
+  "budget": 60,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "n_repeats_per_cell": 50,
+  "n_total_trials": 800,
+  "llm_usage": {
+    "request_count": 9850,
+    "prompt_tokens": 2869218,
+    "completion_tokens": 568772,
+    "total_tokens": 3437990,
+    "hidden_reasoning_tokens": 0,
+    "billable_completion_tokens": 568772,
+    "actual_cost_usd": 5.20879060000005,
+    "cached_prompt_tokens": 0,
+    "reasoning_tokens": 0,
+    "truncated_responses": 0,
+    "cost_source": "actual (openrouter billed)"
+  },
+  "git_provenance": {
+    "commit": "1b076b15d1ef1fa2df92b1963ba7a9ef3ba61c2b",
+    "branch": "exp/listening-qa-model-expansion",
+    "tags": [],
+    "dirty": false,
+    "prompt_diffs": {
+      "bench/tasks/wm_prompt_parts.py": null,
+      "bench/tasks/wm_mcq_common.py": null,
+      "bench/core/wm_agent.py": null,
+      "bench/tasks/human_simulation_prefixes.py": null,
+      "bench/tasks/digit_span_forward.py": null,
+      "bench/tasks/digit_span_reverse.py": null,
+      "application/listening_qa/prompting.py": null,
+      "application/reading_qa/prompting.py": null,
+      "rationales/prompting.py": null,
+      "rationales/prompts/fewshot_forward.txt": null,
+      "rationales/prompts/fewshot_reverse.txt": null,
+      "rationales/listening/prompting.py": null,
+      "rationales/prompts/fewshot_listening.txt": null
+    }
+  },
+  "cells": {
+    "astronomy:control:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.996,
+      "per_statement_mean": 0.9992,
+      "parse_error_count": 0,
+      "memory_words_mean": 51.48
+    },
+    "astronomy:distractor:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.82,
+      "per_statement_mean": 0.9448000000000001,
+      "parse_error_count": 0,
+      "memory_words_mean": 49.06
+    },
+    "astronomy:repeat_long:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.996,
+      "per_statement_mean": 0.9992,
+      "parse_error_count": 0,
+      "memory_words_mean": 51.5
+    },
+    "astronomy:repeat_short:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 1.0,
+      "per_statement_mean": 1.0,
+      "parse_error_count": 0,
+      "memory_words_mean": 50.4
+    },
+    "fabrics:control:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.84,
+      "per_statement_mean": 0.968,
+      "parse_error_count": 0,
+      "memory_words_mean": 48.08
+    },
+    "fabrics:distractor:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.772,
+      "per_statement_mean": 0.9472,
+      "parse_error_count": 0,
+      "memory_words_mean": 48.66
+    },
+    "fabrics:repeat_long:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.8560000000000001,
+      "per_statement_mean": 0.9712000000000001,
+      "parse_error_count": 0,
+      "memory_words_mean": 46.5
+    },
+    "fabrics:repeat_short:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.872,
+      "per_statement_mean": 0.9712000000000001,
+      "parse_error_count": 0,
+      "memory_words_mean": 42.78
+    },
+    "fruits:control:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 1.0,
+      "per_statement_mean": 1.0,
+      "parse_error_count": 0,
+      "memory_words_mean": 44.56
+    },
+    "fruits:distractor:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.9,
+      "per_statement_mean": 0.9664,
+      "parse_error_count": 0,
+      "memory_words_mean": 50.42
+    },
+    "fruits:repeat_long:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.9840000000000001,
+      "per_statement_mean": 0.9936,
+      "parse_error_count": 0,
+      "memory_words_mean": 43.3
+    },
+    "fruits:repeat_short:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.992,
+      "per_statement_mean": 0.9984000000000001,
+      "parse_error_count": 0,
+      "memory_words_mean": 38.44
+    },
+    "martial_arts:control:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.96,
+      "per_statement_mean": 0.9895999999999999,
+      "parse_error_count": 0,
+      "memory_words_mean": 52.24
+    },
+    "martial_arts:distractor:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.672,
+      "per_statement_mean": 0.9024,
+      "parse_error_count": 0,
+      "memory_words_mean": 53.8
+    },
+    "martial_arts:repeat_long:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.9359999999999999,
+      "per_statement_mean": 0.9848,
+      "parse_error_count": 0,
+      "memory_words_mean": 52.72
+    },
+    "martial_arts:repeat_short:C2-stream:60": {
+      "n": 50,
+      "n_scored": 50,
+      "empty_response_count": 0,
+      "exact_match_mean": 0.98,
+      "per_statement_mean": 0.9944,
+      "parse_error_count": 0,
+      "memory_words_mean": 50.7
+    }
+  },
+  "empty_response_count": 0,
+  "unparsed_answer_rate": 0.00025,
+  "budget_fallback_rate": 0.05847953216374269,
+  "budget_truncation_rate": 0.003157894736842105,
+  "budget_fallback_flag": true,
+  "memory_words_mean_by_level": {
+    "control": 49.09,
+    "repeat_short": 45.58,
+    "repeat_long": 48.505,
+    "distractor": 50.485
+  }
+}

@@ -1,0 +1,12 @@
+model=google/gemma-4-31B-it
+profile=gemma-4-31b-think
+task=prompted
+n_repeats_per_cell=50
+hf_snapshot_sha=842da3794eaa0b77d5f08bae87a17459d91ff475
+vllm=0.31.0
+torch=2.13.0+cu130
+tensor_parallel_size=1
+gpu=      1 NVIDIA H200;
+vllm_serve_flags=--port 35771 --host 127.0.0.1 --tensor-parallel-size 1 --dtype bfloat16 --max-model-len 32768 --gpu-memory-utilization 0.90 --generation-config vllm --enable-auto-tool-choice --tool-call-parser gemma4 --reasoning-parser gemma4 --chat-template /scratch/<user>/.cache/vllm_templates/tool_chat_template_gemma4.jinja
+repo_git_sha=21ffbc9
+date=2026-10-10T20:14:26-04:00

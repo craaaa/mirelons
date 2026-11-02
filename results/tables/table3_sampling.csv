@@ -1,0 +1,40 @@
+model,thinking,temperature,top_p,top_k
+Qwen2.5 0.5B,Off,0.7,0.8,20
+Qwen2.5 1.5B,Off,0.7,0.8,20
+Qwen2.5 14B,Off,0.7,0.8,20
+Qwen2.5 32B,Off,0.7,0.8,20
+Qwen2.5 3B,Off,0.7,0.8,20
+Qwen2.5 72B,Off,0.7,0.8,20
+Qwen2.5 7B,Off,0.7,0.8,20
+Qwen3 0.6B,Off,0.7,0.8,20
+Qwen3 0.6B,On,0.6,0.95,20
+Qwen3 1.7B,Off,0.7,0.8,20
+Qwen3 1.7B,On,0.6,0.95,20
+Qwen3 14B,Off,0.7,0.8,20
+Qwen3 14B,On,0.6,0.95,20
+Qwen3 32B,Off,0.7,0.8,20
+Qwen3 32B,On,0.6,0.95,20
+Qwen3 4B,Off,0.7,0.8,20
+Qwen3 4B,On,0.6,0.95,20
+Qwen3 8B,Off,0.7,0.8,20
+Qwen3 8B,On,0.6,0.95,20
+Qwen3.8 27B,Off,0.7,0.8,20
+Qwen3.8 27B,On (med.),1.0,0.95,20
+Claude Haiku 5.5,Off,not sent,,
+Claude Haiku 5.5,On,not sent,,
+Claude Sonnet 5,Off,not sent,,
+DeepSeek V4-Pro,Off,1.0,1.0,
+DeepSeek V4-Pro,On,1.0,1.0,
+DeepSeek V4.1-Flash,Off,1.0,1.0,
+DeepSeek V4.1-Flash,On,1.0,1.0,
+Gemini 3.1 Pro,On (high),1.0,,
+Gemini 3.5 Flash-Lite,Minimal,1.0,,
+Gemini 3.6 Flash,Minimal,1.0,,
+Gemini 3.8 Flash,On (med.),1.0,,
+Gemma 4 31B,Off,1.0,0.95,64
+Gemma 4 31B,On,1.0,0.95,64
+GPT-6 Luna,Off,1.0,1.0,
+GPT-6 Luna,On (med.),not sent,,
+GPT-6 Sol,Off,1.0,1.0,
+GLM-5.2,Off,1.0,0.95,
+GLM-5.3-Flash,On,1.0,0.95,

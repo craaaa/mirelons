@@ -1,0 +1,25 @@
+[project]
+name = "mirelons"
+version = "0.1.0"
+description = "Data and analysis for 'Analyzing Repetition and Interference Effects in Memory-Constrained User Simulators'"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.5.1",
+    "pandas>=3.0",
+    "scipy>=1.18",
+    "matplotlib>=3.8",
+    "plotnine>=0.15",
+    "pyyaml>=6.0",
+    "mutagen>=1.47",   # audio durations for Table 1
+]
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[tool.uv]
+package = false   # a collection of scripts, not an installable package
+
+[tool.pytest.ini_options]
+testpaths = ["analysis/tests"]
+pythonpath = ["analysis", "analysis/tests"]

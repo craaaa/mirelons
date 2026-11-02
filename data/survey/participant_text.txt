@@ -1,0 +1,453 @@
+Participant-facing text of the listening-QA human study (Qualtrics survey multi_v6.qsf), in survey-flow order.
+Extracted from application/prolific_study/multi_v6/multi_v6.qsf on 2026-10-13; HTML stripped. "Timing" items are
+hidden page timers (not shown to participants). Passage pages ("Loading...") are rendered by question JavaScript;
+their on-screen text is listed at the end.
+
+######## BLOCK: Consent  (2 items)
+
+--- [Q1] type=DB/TB
+Informed Consent Form IRB-FY2020-4512
+
+Title: Sources of Difficulty in Language Processing and
+Learning
+
+Principal Investigator: Tal Linzen (Department of
+Linguistics and the Center for Data Science, New York
+University)
+
+PURPOSE OF RESEARCH STUDY: 
+
+The goal of the
+project is to measure what makes particular aspects of language easier or harder
+to learn and understand.
+
+PROCEDURES:
+
+You will be asked to
+read or listen to language, and answer questions about what you’ve read or
+heard. The sentences may be in English or in a made-up language that you will
+learn during the experiment. The experiment involves a single session that will
+take up to an hour; there will be up to five sessions, but most participants
+will only participate in a single session.
+
+RISKS/DISCOMFORTS:
+
+The
+risks associated with participation in this study are no greater than those
+encountered in daily life.
+
+BENEFITS:
+
+There are no direct benefits to
+you from participating in this study. This study may
+benefit society if the results lead to a better understanding of what makes
+certain aspects of language easier or harder to learn and understand.
+
+VOLUNTARY PARTICIPATION AND RIGHT TO WITHDRAW:
+
+Your participation in this study is entirely
+voluntary: You choose whether to participate. If you decide not to participate,
+there are no penalties, and you will not lose any benefits to which you would
+otherwise be entitled.
+
+If you choose to
+participate in the study, you can stop your participation at any time, without
+any penalty or loss of benefits. 
+
+CONFIDENTIALITY:
+
+Any study records that identify
+you will be kept confidential to the extent possible by law. The records from
+your participation may be reviewed by people responsible for making sure that
+research is done properly. Otherwise, records that identify you will be
+available only to people working on the study, unless you give permission for
+other people to see the records.
+
+Any study records that include
+your name will be kept in a password-protected database. On all records of test results we will use a code number rather than your name. 
+
+COMPENSATION:
+
+You will receive compensation in proportion to the length of the session.
+
+IF YOU HAVE QUESTIONS OR CONCERNS:
+
+You can ask questions about this research study now or at any time
+during the study, by talking to the researcher(s) working with you or by emailing
+Dr. Tal Linzen at linzen@nyu.edu. 
+
+If you have questions about your
+rights as a research participant or feel that you have not been treated fairly,
+please contact
+the NYU Institutional Review Board at ask.humansubjects@nyu.edu
+or 212.998.4808.
+
+--- [Q2] type=MC/SAVR
+Do you consent to participate in this study?
+   ( ) I consent
+   ( ) I do not consent
+
+######## BLOCK: Audio Setup  (1 items)
+
+--- [Q1] type=MC/MAVR
+Before beginning, let's ensure your audio is working!
+
+Make sure that you can hear the following audio clip, then select the appropriate answer(s) below.
+   ( ) 412
+   ( ) 28
+   ( ) -356
+   ( ) 7
+
+######## BLOCK: Instructions  (1 items)
+
+--- [Q1] type=DB/TB
+Instructions
+Please complete this task in one sitting without writing anything down or using outside resources.
+
+You will listen to four passages of text. Each passage will be between 1-2 minutes long. You will only be able to listen to each passage once. After listening to each passage, you will answer some questions about its contents.
+
+Do your best to answer accurately, but don't worry if you are unsure about any answers. Some passages and questions may be more difficult than others.
+
+You may take a short break between passages if needed, but please keep breaks brief and stay focused on the task.
+
+######## BLOCK: martial_arts_passage  (2 items)
+
+--- [martial_arts_timing_passage] type=Timing/PageTimer
+Timing
+   ( ) First Click
+   ( ) Last Click
+   ( ) Page Submit
+   ( ) Click Count
+
+--- [martial_arts_trial] type=DB/TB
+Loading...
+
+######## BLOCK: martial_arts_qs - Jun 29, 2026  (7 items)
+
+--- [martial_arts_timing_qs] type=Timing/PageTimer
+Timing
+   ( ) First Click
+   ( ) Last Click
+   ( ) Page Submit
+   ( ) Click Count
+
+--- [martial_arts_QMA01] type=MC/MAVR
+Which of the following accurately describe the style of velthrak? Select all that apply.
+   ( ) Velthrak is a grappling-focused art
+   ( ) Velthrak does not permit striking of any kind
+   ( ) Velthrak is a striking-focused art
+   ( ) Velthrak allows limited strikes during competition
+   ( ) None of the above
+
+--- [martial_arts_QMA02] type=MC/MAVR
+Which of the following accurately describe the sornek? Select all that apply.
+   ( ) It is the signature technique of velthrak
+   ( ) It involves a hip throw
+   ( ) It starts with a spinning elbow strike to the opponent's shoulder
+   ( ) It begins with a leg pick
+   ( ) None of the above
+
+--- [martial_arts_QMA03] type=MC/MAVR
+Which of the following correctly describes the governing body of velthrak? Select all that apply.
+   ( ) The Dalviri Arts Council governs velthrak certification
+   ( ) The official governing body of velthrak was formed in 1967
+   ( ) The official governing body of velthrak was formed in 1947
+   ( ) The Dalviri Federation of Combat Arts governs velthrak certification
+   ( ) None of the above
+
+--- [martial_arts_QMA04] type=MC/MAVR
+Which of the following correctly describes velthrak? Select all that apply.
+   ( ) Full-resistance sparring involves kicking and punching
+   ( ) Practitioners must complete 200 strikes on a bag before each session
+   ( ) Practitioners must practice for three years before engaging in full-resistance sparring
+   ( ) Practitioners must practice for two years before engaging in full-resistance sparring
+   ( ) None of the above
+
+--- [martial_arts_QMA05] type=MC/MAVR
+Which of the following are restrictions that apply in velthrak? Select all that apply.
+   ( ) Striking an opponent in any form is against the rules
+   ( ) A person who has practiced velthrak for one year cannot engage in full-resistance sparring
+   ( ) The sornek may only be performed in championship-level bouts
+   ( ) All competition surfaces must be approved by the Dalviri Federation of Combat Arts
+   ( ) None of the above
+
+--- [martial_arts_AT_martial_arts] type=MC/MAVR
+Which of the following best describes what this passage is about? This is an attention check.
+   ( ) A style of martial arts
+   ( ) A type of volcano
+   ( ) A kind of bicycle
+   ( ) A category of kitchen appliance
+   ( ) None of the above
+
+######## BLOCK: martial_arts_feedback  (2 items)
+
+--- [martial_arts_difficulty] type=Slider/HSLIDER
+How difficult did you find the passage and questions?
+   ( ) Passage
+   ( ) Questions
+
+--- [martial_arts_comments] type=TE/ESTB
+Is there anything about the study you found notable or wanted to let us know about? For example: comments about the passage and/or narration, how challenging the questions were, any distractions or technical issues, or anything else.
+
+######## BLOCK: Break  (1 items)
+
+--- [Q53] type=DB/TB
+You have completed a passage. You may take a short break before continuing. When you are ready, click the button below to proceed.
+
+######## BLOCK: fruits_v2_passage  (2 items)
+
+--- [fruits_v2_timing_passage] type=Timing/PageTimer
+Timing
+   ( ) First Click
+   ( ) Last Click
+   ( ) Page Submit
+   ( ) Click Count
+
+--- [fruits_v2_trial] type=DB/TB
+Loading...
+
+######## BLOCK: fruits_v2_qs  (7 items)
+
+--- [fruits_v2_timing_qs] type=Timing/PageTimer
+Timing
+   ( ) First Click
+   ( ) Last Click
+   ( ) Page Submit
+   ( ) Click Count
+
+--- [fruits_v2_QF_V2_01] type=MC/MAVR
+Which of the following correctly describe the outer appearance of the Mirelon? Select all that apply.
+   ( ) The skin is a dark, nearly black shade of blue
+   ( ) The skin is dusted with a pale white powdery coating
+   ( ) The skin is a warm yellow color
+   ( ) The surface is smooth and glossy
+   ( ) None of the above
+
+--- [fruits_v2_QF_V2_02] type=MC/MAVR
+Which of the following are true of the Mirelon's flesh? Select all that apply.
+   ( ) The interior is a warm, deep golden-yellow
+   ( ) The color of the flesh comes from a pigment called nivellin
+   ( ) The interior is a soft pale violet
+   ( ) The color of the flesh comes from a pigment called thornellin
+   ( ) None of the above
+
+--- [fruits_v2_QF_V2_03] type=MC/MAVR
+What is the botanical name of the Mirelon? Select all that apply.
+   ( ) Thyrsocarpus niveus
+   ( ) Thyrsocarpus pallens
+   ( ) Spinofex arbens
+   ( ) Thyrsocarpus mirabilis
+   ( ) None of the above
+
+--- [fruits_v2_QF_V2_04] type=MC/MAVR
+Which combination correctly describes the Mirelon?
+   ( ) Does not continue ripening once harvested; grows above 900 feet
+   ( ) Does not continue ripening once harvested; grows below 500 feet
+   ( ) Continues ripening after harvest; grows above 900 feet
+   ( ) Continues ripening after harvest; grows below 500 feet
+   ( ) None of the above
+
+--- [fruits_v2_QF_V2_05] type=MC/MAVR
+Which of the following correctly describes a mirelon's feature? Select all that apply.
+   ( ) Its outer skin is pale yellow with fine raised bristles
+   ( ) Its flesh is colored by a compound called shortellin
+   ( ) It is a climacteric fruit that continues ripening after harvest
+   ( ) Its botanical name Thyrsocarpus rufa
+   ( ) None of the above
+
+--- [fruits_v2_AT_fruits_v2] type=MC/MAVR
+Which of the following options mentions a color? This is an attention check — select only that option.
+   ( ) Harvested in the early weeks of autumn
+   ( ) A deep purple skin over pale flesh
+   ( ) Stored in cool, dry conditions
+   ( ) Sold mainly at regional markets
+   ( ) None of the above
+
+######## BLOCK: fruits_v2_feedback  (2 items)
+
+--- [fruits_v2_difficulty] type=Slider/HSLIDER
+How difficult did you find the passage and questions?
+   ( ) Passage
+   ( ) Questions
+
+--- [fruits_v2_comments] type=TE/ESTB
+Is there anything about the study you found notable or wanted to let us know about? For example: comments about the passage and/or narration, how challenging the questions were, any distractions or technical issues, or anything else.
+
+######## BLOCK: astronomy_passage  (2 items)
+
+--- [astronomy_timing_passage] type=Timing/PageTimer
+Timing
+   ( ) First Click
+   ( ) Last Click
+   ( ) Page Submit
+   ( ) Click Count
+
+--- [astronomy_trial] type=DB/TB
+Loading...
+
+######## BLOCK: astronomy_qs - Jun 29, 2026  (7 items)
+
+--- [astronomy_timing_qs] type=Timing/PageTimer
+Timing
+   ( ) First Click
+   ( ) Last Click
+   ( ) Page Submit
+   ( ) Click Count
+
+--- [astronomy_QA01] type=MC/MAVR
+Which of the following correctly describe the Pictor Nebula? Select all that apply.
+   ( ) It is a cloud of gas
+   ( ) It is located about four thousand light-years from Earth
+   ( ) It is lit from within by young stars
+   ( ) It is a dense ball of old stars
+   ( ) None of the above
+
+--- [astronomy_QA02] type=MC/MAVR
+How do scientists observe the Pictor Nebula? Select all that apply.
+   ( ) With an optical telescope
+   ( ) By picking up red light emitted by the nebula
+   ( ) Using radio equipment that picks up regular pulses
+   ( ) By measuring how its mass varies over time
+   ( ) None of the above
+
+--- [astronomy_QA03] type=MC/MAVR
+What do astronomers study the Pictor Nebula to learn? Select all that apply.
+   ( ) How gravity pulls pockets of gas together
+   ( ) How gas clouds ignite into new stars
+   ( ) How gravitational waves ripple through a region of space
+   ( ) How black hole emissions change
+   ( ) None of the above
+
+--- [astronomy_QA04] type=MC/MAVR
+Which of the following correctly describes the Pictor Nebula? Select all that apply.
+   ( ) A gas cloud lit by embedded young stars that is studied to understand how new stars form
+   ( ) A gas cloud lit by embedded young stars that is studied to understand gravitational waves
+   ( ) The remains of a dying star that is studied to understand how new stars form
+   ( ) The remains of a dying star that is studied to understand gravitational waves
+   ( ) None of the above
+
+--- [astronomy_QA05] type=MC/MAVR
+Which of the following correctly identifies what the Pictor Nebula is? Select all that apply.
+   ( ) An emission nebula — a dense ball of old stars gravitationally bound together
+   ( ) A globular pulsar — a cloud of gas lit by its own embedded young stars
+   ( ) A globular pulsar — the collapsed core of an exploded massive star
+   ( ) An emission nebula — two stars in a close gravitational orbit
+   ( ) None of the above
+
+--- [astronomy_AT_astronomy] type=MC/MAVR
+This is an attention check. Please select 'None of the above' for this question, regardless of the other options.
+   ( ) A telescope tuned to a narrow band of light
+   ( ) A cluster of stars near the galactic edge
+   ( ) A faint object first catalogued in the 1800s
+   ( ) A nebula visible only through long exposure
+   ( ) None of the above
+
+######## BLOCK: astronomy_feedback  (2 items)
+
+--- [astronomy_difficulty] type=Slider/HSLIDER
+How difficult did you find the passage and questions?
+   ( ) Passage
+   ( ) Questions
+
+--- [astronomy_comments] type=TE/ESTB
+Is there anything about the study you found notable or wanted to let us know about? For example: comments about the passage and/or narration, how challenging the questions were, any distractions or technical issues, or anything else.
+
+######## BLOCK: fabrics_passage  (2 items)
+
+--- [fabrics_timing_passage] type=Timing/PageTimer
+Timing
+   ( ) First Click
+   ( ) Last Click
+   ( ) Page Submit
+   ( ) Click Count
+
+--- [fabrics_trial] type=DB/TB
+Loading...
+
+######## BLOCK: fabrics_qs  (7 items)
+
+--- [fabrics_timing_qs] type=Timing/PageTimer
+Timing
+   ( ) First Click
+   ( ) Last Click
+   ( ) Page Submit
+   ( ) Click Count
+
+--- [fabrics_QFB01] type=MC/MAVR
+Which of the following are true of Bracklin? Select all that apply.
+   ( ) It is made out of sheep's wool
+   ( ) It can be made out of the wool of Grennock mountain sheep
+   ( ) It can be made out of the wool of any type of sheep
+   ( ) It can be made out of the wool of Cheshire mountain sheep
+   ( ) None of the above
+
+--- [fabrics_QFB02] type=MC/MAVR
+Which of the following are true of how Bracklin is woven? Select all that apply.
+   ( ) Two threads lock around each other during weaving
+   ( ) The interlocking binds two layers of cloth together without any stitching
+   ( ) Three threads are braided together tightly
+   ( ) The layers are bound together afterward with hand-stitching
+   ( ) None of the above
+
+--- [fabrics_QFB03] type=MC/MAVR
+How is bracklin made? Select all that apply.
+   ( ) Double-weft interlock weaving
+   ( ) Double-warp chain weaving
+   ( ) Cross-thread basket weaving
+   ( ) Single-strand satin weaving
+   ( ) None of the above
+
+--- [fabrics_QFB04] type=MC/MAVR
+Which of the following correctly describes Bracklin?
+   ( ) An animal-based fiber used for winter carpets and ceremonial wall tapestries
+   ( ) An animal-based fiber used for summer garments and ceremonial robes
+   ( ) A plant-based fiber used for winter carpets and ceremonial wall tapestries
+   ( ) A plant-based fiber used for summer garments and ceremonial robes
+   ( ) None of the above
+
+--- [fabrics_QFB05] type=MC/MAVR
+Which of the following correctly describes a feature of bracklin? Select all that apply.
+   ( ) It comes in shades ranging from warm ivory to ash grey
+   ( ) It comes in shades ranging from pale green to straw yellow
+   ( ) It is produced mainly for winter outerwear and ceremonial robes
+   ( ) It is produced mainly for summer clothing and decorative hangings
+   ( ) None of the above
+
+--- [fabrics_AT_fabrics] type=MC/MAVR
+Which of these is a fabric named in the passage? Select all that apply.
+   ( ) Bracklin
+   ( ) Calosse
+   ( ) Marrowsilk
+   ( ) Quillen
+   ( ) None of the above
+
+######## BLOCK: fabrics_feedback  (2 items)
+
+--- [fabrics_difficulty] type=Slider/HSLIDER
+How difficult did you find the passage and questions?
+   ( ) Passage
+   ( ) Questions
+
+--- [fabrics_comments] type=TE/ESTB
+Is there anything about the study you found notable or wanted to let us know about? For example: comments about the passage and/or narration, how challenging the questions were, any distractions or technical issues, or anything else.
+
+######## BLOCK: Debrief  (1 items)
+
+--- [Q1] type=DB/TB
+Thank you for participating! Your responses have been recorded.
+
+Please click the 'End Task' button below to return to Prolific and confirm your completion.
+
+Do not close this window or use the back button — your submission is only finalized once you are redirected to Prolific.
+
+######## PASSAGE PAGES (question JavaScript; identical for every topic except the first line)
+
+1. Topic line and start prompt, e.g. "This passage is about a type of combat sport. When you are ready, click to start
+   listening." Topics in the flow: a type of combat sport (martial arts), a type of fruit (fruits), an astronomical
+   object (astronomy), a type of textile (fabrics).
+2. Button: "▶ Start Audio"
+3. While playing: "Audio is playing. Please listen carefully." with a countdown "<N>s remaining" (no pause, seek or
+   replay controls).
+4. When finished: "Audio completed. Click Next to continue." (the Next button appears only after the audio ends).
+5. Error messages: "Audio failed to load. Please return this study on Prolific." / "Configuration error: missing audio
+   for condition=<id>. Please return this study on Prolific."

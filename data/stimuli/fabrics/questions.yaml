@@ -1,0 +1,97 @@
+# Fabrics — Bracklin
+# See features.md for every mention of each fact and the competitor (Vessamere) paragraph.
+# Mentions of each tested fact: SayOnce 1, SayTwice 2, SayThrice 3, Distract 1 (in SayThrice the third mention
+# of the uses refers back to them without naming them).
+# Q1: raw material (2 correct: sheep's wool, Grennock mountain sheep)
+# Q2: weaving mechanism (2 correct: threads lock, layers bound without stitching)
+# Q3: weaving technique name (1 correct: double-weft interlock weaving)
+# Q4: 2x2 combination of fibre class x primary uses; no option is right on both, None of the above is correct (answer=[5])
+# Q5: colour range + primary uses (2 correct)
+# AT: attention check (name of the fabric)
+# answer: list of correct option numbers (1-indexed, matching Qualtrics choice order)
+
+title: Fabrics — Bracklin
+answer_type: multi_select
+scoring: per_statement
+
+questions:
+  - q_id: QFB01
+    question: "Which of the following are true of Bracklin? Select all that apply."
+    options:
+      1: "It is made out of sheep's wool"
+      2: "It can be made out of the wool of Grennock mountain sheep"
+      3: "It can be made out of the wool of any type of sheep"
+      4: "It can be made out of the wool of Cheshire mountain sheep"
+      5: "None of the above"
+    answer: [1, 2]
+    metadata:
+      type: content
+      feature: [raw_material_species, raw_material_class]
+      concepts: [bracklin]
+
+  - q_id: QFB02
+    question: "Which of the following are true of how Bracklin is woven? Select all that apply."
+    options:
+      1: "Two threads lock around each other during weaving"
+      2: "The interlocking binds two layers of cloth together without any stitching"
+      3: "Three threads are braided together tightly"
+      4: "The layers are bound together afterward with hand-stitching"
+      5: "None of the above"
+    answer: [1, 2]
+    metadata:
+      type: content
+      feature: [construction_technique]
+      concepts: [bracklin]
+
+  - q_id: QFB03
+    question: "How is bracklin made? Select all that apply."
+    options:
+      1: "Double-weft interlock weaving"
+      2: "Double-warp chain weaving"
+      3: "Cross-thread basket weaving"
+      4: "Single-strand satin weaving"
+      5: "None of the above"
+    answer: [1]
+    metadata:
+      type: content
+      feature: [construction_technique]
+      concepts: [bracklin]
+  - q_id: QFB04
+    question: "Which of the following correctly describes Bracklin?"
+    options:
+      1: "An animal-based fiber used for winter carpets and ceremonial wall tapestries"
+      2: "An animal-based fiber used for summer garments and ceremonial robes"
+      3: "A plant-based fiber used for winter carpets and ceremonial wall tapestries"
+      4: "A plant-based fiber used for summer garments and ceremonial robes"
+      5: "None of the above"
+    answer: [5]
+    metadata:
+      type: content
+      feature: [raw_material_class, primary_uses]
+      concepts: [bracklin]
+
+  - q_id: QFB05
+    question: "Which of the following correctly describes a feature of bracklin? Select all that apply."
+    options:
+      1: "It comes in shades ranging from warm ivory to ash grey"
+      2: "It comes in shades ranging from pale green to straw yellow"
+      3: "It is produced mainly for winter outerwear and ceremonial robes"
+      4: "It is produced mainly for summer clothing and decorative hangings"
+      5: "None of the above"
+    answer: [1, 3]
+    metadata:
+      type: content
+      feature: [color_range, primary_uses]
+      concepts: [bracklin]
+
+  - q_id: AT_fabrics
+    question: "Which of these is a fabric named in the passage? Select all that apply."
+    options:
+      1: "Bracklin"
+      2: "Calosse"
+      3: "Marrowsilk"
+      4: "Quillen"
+      5: "None of the above"
+    answer: [1]
+    metadata:
+      type: attention_check
